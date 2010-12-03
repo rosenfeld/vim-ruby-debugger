@@ -2,6 +2,10 @@
 
 This Vim plugin implements interactive Ruby debugger in Vim.
 
+The pathogen branch from rosenfeld's fork can be used as a git submodule for a vimfiles:
+
+    cd ~/.vim
+    git submodule add -b pathogen git://github.com/rosenfeld/vim-ruby-debugger.git bundle/ruby-debugger
 
 # Features #
 

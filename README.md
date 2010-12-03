@@ -7,6 +7,9 @@ The pathogen branch from rosenfeld's fork can be used as a git submodule for a v
     cd ~/.vim
     git submodule add -b pathogen git://github.com/rosenfeld/vim-ruby-debugger.git bundle/ruby-debugger
 
+Additionally, this fork will change all key bindings to prefix them with a 'd' for avoiding collisions with other plugins
+like Command-T (Leader-t). For example, Leader-b will become Leader-db and Leader-t becomes Leader-dt.
+
 # Features #
 
 1. It can debug any Ruby application (Rails, by default), using **ruby-debug-ide** gem
@@ -67,17 +70,17 @@ I've tested the plugin in Windows and Linux. All tests should be passed there.
 
     It will kill any listeners of ports 39767 and 39768 and run rdebug-ide and ~/.vim/bin/ruby_debugger.rb on these ports accordingly.
 
-3.  Set breakpoint somewhere by **&lt;Leader&gt;b** (e.g., '\b'). You should see 'xx' symbol at current line.
+3.  Set breakpoint somewhere by **&lt;Leader&gt;db** (e.g., '\db'). You should see 'xx' symbol at current line.
 
 4.  Open page with the breakpoint in the browser. Vim should automatically set current line to breakpoint.
 
 5.  After this, you can use commands:
 
-         <Leader>b - set breakpoint at current line
-         <Leader>v - open/close window with variables. You can expand/collapse variables by 'o' in normal mode or left-mouse double-click
-         <Leader>n - step over
-         <Leader>s - step into
-         <Leader>c - continue
+         <Leader>db - set breakpoint at current line
+         <Leader>dv - open/close window with variables. You can expand/collapse variables by 'o' in normal mode or left-mouse double-click
+         <Leader>dn - step over
+         <Leader>ds - step into
+         <Leader>dc - continue
 
 
 # Testing #

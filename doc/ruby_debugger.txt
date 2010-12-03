@@ -95,19 +95,19 @@ It will kill any listeners of ports 39767 and 39768 and run rdebug-ide and
    its current line to breakpoint.
 
 5. After this, you can use commands:
-   * <Leader>b - set breakpoint at current line
-   * <Leader>v - open/close window with variables. You can expand/collapse
+   * <Leader>db - set breakpoint at current line
+   * <Leader>dv - open/close window with variables. You can expand/collapse
                  variables by 'o' in normal mode or left-mouse double-click
-   * <Leader>m - open/close window with breakpoints. You can open file with
+   * <Leader>dm - open/close window with breakpoints. You can open file with
                  breakpoint by pressing 'o' or left-mouse double-click on it,
                  or delete the breakpoint by pressing 'd' on it.
-   * <Leader>t - open/close window with backtrace. You can open file/line in
+   * <Leader>dt - open/close window with backtrace. You can open file/line in
                  this window by pressing 'o' or left-mouse double-click on it
-   * <Leader>n - step over
-   * <Leader>s - step into
-   * <Leader>f - step out
-   * <Leader>c - continue
-   * <Leader>d - remove all breakpoints
+   * <Leader>dn - step over
+   * <Leader>ds - step into
+   * <Leader>df - step out
+   * <Leader>dc - continue
+   * <Leader>dd - remove all breakpoints
 
 ==============================================================================
 DETAILS					*ruby-debugger-details*

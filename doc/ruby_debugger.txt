@@ -88,7 +88,7 @@ QUICKSTART					*ruby-debugger-quickstart*
 It will kill any listeners of ports 39767 and 39768 and run rdebug-ide and
 ~/.vim/bin/ruby_debugger.rb on these ports accordingly.
 
-3. Set breakpoint somewhere by <Leader>b (usually, '\b'). You should see
+3. Set breakpoint somewhere by <Leader>db (usually, '\db'). You should see
    "xx" symbol at the current line.
 
 4. Open page with the breakpoint in the browser. Vim should automatically set
@@ -115,16 +115,16 @@ DETAILS					*ruby-debugger-details*
 1. Of course, you can set your own mappings instead of mine. For this, just
    add this to your .vimrc and change keys for mapping:
 >
-        map <Leader>b  :call g:RubyDebugger.toggle_breakpoint()<CR>
-        map <Leader>v  :call g:RubyDebugger.open_variables()<CR>
-        map <Leader>m  :call g:RubyDebugger.open_breakpoints()<CR>
-        map <Leader>t  :call g:RubyDebugger.open_frames()<CR>
-        map <Leader>s  :call g:RubyDebugger.step()<CR>
-        map <Leader>f  :call g:RubyDebugger.finish()<CR>
-        map <Leader>n  :call g:RubyDebugger.next()<CR>
-        map <Leader>c  :call g:RubyDebugger.continue()<CR>
-        map <Leader>e  :call g:RubyDebugger.exit()<CR>
-        map <Leader>d  :call g:RubyDebugger.remove_breakpoints()<CR>
+        map <Leader>db  :call g:RubyDebugger.toggle_breakpoint()<CR>
+        map <Leader>dv  :call g:RubyDebugger.open_variables()<CR>
+        map <Leader>dm  :call g:RubyDebugger.open_breakpoints()<CR>
+        map <Leader>dt  :call g:RubyDebugger.open_frames()<CR>
+        map <Leader>ds  :call g:RubyDebugger.step()<CR>
+        map <Leader>df  :call g:RubyDebugger.finish()<CR>
+        map <Leader>dn  :call g:RubyDebugger.next()<CR>
+        map <Leader>dc  :call g:RubyDebugger.continue()<CR>
+        map <Leader>de  :call g:RubyDebugger.exit()<CR>
+        map <Leader>dd  :call g:RubyDebugger.remove_breakpoints()<CR>
 >
 2. Standard output and errors (STDOUT and STDERR) of running script is 
 redirected to ~/.vim/tmp/ruby_debugger_output file (only for POSIX 
@@ -164,7 +164,7 @@ Then, execution will be stopped on the breakpoint only if condition is true
 This way, when exception is raised, debugger will catch it, jump to file/line
 of the exception and you'll be allowed to watch variables, backtrace, etc there.
 To reset all catched exceptions just restart the server by :Rdebugger command.
-You can watch placed catchers in the Breakpoints Window (<Leader>m by default). 
+You can watch placed catchers in the Breakpoints Window (<Leader>dm by default). 
 See the bottom line of the window.
 
 WARNING!!! If you try to set catcher to unexisted exception (e.g., if you
